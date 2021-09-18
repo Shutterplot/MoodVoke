@@ -1,0 +1,31 @@
+body,html{
+  margin:0;
+  padding:0;
+}
+header{
+  width: 100%;
+  height:70px;
+  background-color: #69051c;
+}
+
+.logo-img{
+  float: left;
+  position: relative;
+
+  margin: -10px -25px 10px;
+}
+ul{
+  width: auto;
+  float: right;
+  margin-top: 8px;
+}
+li{
+display:inline-block;
+padding:15px 30px;
+}
+a{
+  text-align:center;
+  text-decoration: none;
+  font-size: 2vw;
+  color:#f09bae;
+}
