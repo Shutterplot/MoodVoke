@@ -1,6 +1,7 @@
 const express = require('express');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+const fileupload = require('express-fileupload');
 const mongoose = require('mongoose');
 const app = express();
 const passportConfig = require('./passportConfig');
@@ -19,6 +20,7 @@ mongoose.connect(process.env.DB_CONNECTION_STRING, {
 // MIDDLEWARE
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.use(fileupload());
 app.use(express.static(__dirname + '/public'));
 app.use(session({
     secret: process.env.SECRET,

@@ -1,112 +1,126 @@
-*{
+body,
+html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f6f6f8;
 }
 
-body{
+header {
     width: 100%;
+    height: 70px;
+    background-color: #69051c;
+}
+
+.logo-img {
+    float: left;
     position: relative;
-    font-family: 'poppins', sans-serif;
+    margin: -10px -25px 10px;
 }
 
-::selection{
-    background: #1b1b1b;
-    color: #fff;
+ul {
+    width: auto;
+    float: right;
+    margin-top: 8px;
 }
 
-.navbar{
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5vw;
-    background: #fff;
-    z-index: 9;
+li {
+    display: inline-block;
+    padding: 15px 30px;
 }
 
-.links-container{
-    display: flex;
-    list-style: none;
-}
-
-.link{
-    padding: 10px;
-    margin-left: 10px;
+a {
+    text-align: center;
     text-decoration: none;
-    text-transform: capitalize;
-    color: #000;
+    font-size: 2vw;
+    color: #f09bae;
 }
 
-.header{
-    margin-top: 60px;
+.slidecontainer {
     width: 100%;
-    height: calc(100vh - 60px);
-    background: url(../img/header.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* Width of the outside container */
 }
 
-.content{
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 40px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 40px;
+    /* Slider handle height */
+    background: #04AA6D;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #04AA6D;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.question h2 {
+    width: fit-content;
+    margin: 20px auto;
+    /* margin-right: 30px; */
+    font-size: 60px;
     text-align: center;
 }
 
-.heading{
+#submit-btn {
+    background: #ff4b2b;
     color: #fff;
-    text-transform: capitalize;
-    font-size: 80px;
-    line-height: 60px;
-    margin-bottom: 80px;
-}
-
-.heading .small{
-    display: block;
+    border: 1pxsolid#eee;
+    border-radius: 20px;
+    box-shadow: 5px5px5px#eee;
+    margin: 10px 0;
+    padding: 15px;
+    width: 200px;
     font-size: 40px;
+    color: black;
+    text-shadow: none;
+    margin-top: 50px;
 }
 
-.heading .no-fill{
-    font-style: italic;
-    color: transparent;
-    -webkit-text-stroke: 2px #fff;
-}
-
-.btn{
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.7);
-    color: #000;
-    text-decoration: none;
-    text-transform: capitalize;
-}
-
-.blogs-section{
-    width: 100%;
-    padding: 50px 5vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 80px;
-}
-
-.blog-image{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.blog-overview{
-    margin: 10px 0 20px;
-    line-height: 30px;
-}
-
-.btn.dark{
-    background: #1b1b1b;
+#submit-btn:hover {
+    background: #d43f24;
     color: #fff;
+    border: 1pxsolid#eee;
+    border-radius: 20px;
+    box-shadow: 5px5px5px#eee;
+    text-shadow: none;
+    cursor: pointer;
 }
