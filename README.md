@@ -38,7 +38,7 @@ The app basically helps you in keeping a track of good mental health by analyzin
 
 ANIKET MISHRA
 
-KAHLID ZAHRA
+KHALID ZAHRA
 
 MOBASHERAH FALAK
 
