@@ -10,12 +10,18 @@
 
 The app basically helps you in keeping a track of good mental health by analyzing your day-to-day mental health, it being an important part of your life. The app specifically provides an edge and lends out a helping hand to the LGBTQIA+ community, as it provides the facility of adding and sharing blogs, these blogs can prove to be really helpful for someone to cope with the physical and mental trauma considering the powerful stories of the ones who have already been in the same situation.
 
-## **Some Screenshots of our Website**
+# **Some Screenshots of our Website**
+## Sign In Page
 ![Sign In Page](/public/img/rsignin.png "Sign In Page")
+## Home Page
 ![Home Page](/public/img/rhome.png "Home Page")
+## Community HomePage
 ![Blog - Home](/public/img/rbloghome.png "Blog - Home")
+## You can Write Your Own Blogs
 ![Blog - Editor](/public/img/rblogedit.png "Blog - Editor")
+## Any Suggestions are always welcome
 ![Contact Us page](/public/img/rcontactus.png "Contact Us page")
+## About Us
 ![About us Page](/public/img/raboutus.png "About us Page")
 
 
